@@ -1,0 +1,134 @@
+<div class="category-navbar">
+  <div (click)="gotoSchool()" class="navbar-text">
+    {{links.link_categories[0].category}}
+  </div>
+  <div class="navbar-text-selected">
+    {{links.link_categories[1].category}}
+  </div>
+  <div (click)="gotoCommunication()" class="navbar-text">
+    {{links.link_categories[2].category}}
+  </div>
+  <div (click)="gotoFavorites()" class="navbar-text">
+    {{links.link_categories[3].category}}
+  </div>
+</div>
+
+<div class="back-button">
+  <img class="button-images" src="http://www.newdesignfile.com/postpic/2010/03/home-icon-white_338306.png" (click)="goHome()">
+</div>
+
+<div class="selected-category-mobile">
+  <table>
+    <tr>
+      <td>
+        <img class="selected-category-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/hbll.png">
+      </td>
+      <td>
+        <h2>{{links.link_categories[1].category}}</h2>
+      </td>
+    </tr>
+  </table>
+  <div>
+    <div>
+      <div *ngFor="let link of links.link_categories[1].links; let i = index">
+        <a [attr.href]="links.link_categories[1].links[i].link" target="_blank">
+          <div class="links">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i].icon}}</i>
+            <h3 class="mini-links">{{links.link_categories[1].links[i].name}}</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="buffer">
+    You found the buffer!
+  </div>
+  <div class="navbar-bottom">
+    <div class="school-navbar" (click)="gotoSchool()">
+      <img class="navbar-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/hbll.png">
+    </div>
+    <div class="work-navbar-selected">
+      <img class="navbar-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/student-employment.png">
+      <h4 class="navbar-title">{{links.link_categories[1].category}}</h4>
+    </div>
+    <div class="communication-navbar" (click)="gotoCommunication()">
+      <img class="navbar-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/YMessage.png">
+    </div>
+    <div class="favorites-navbar" (click)="gotoFavorites()">
+      <img class="navbar-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png">
+    </div>
+  </div>
+</div>
+
+<div class="link-expand-page">
+  <div class="selected-category-desktop">
+    <div class="link-header">
+      <h1>{{links.link_categories[1].category}}</h1>
+    </div>
+    <table>
+      <tr>
+        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:0:12; let i = index">
+          <a [attr.href]="links.link_categories[1].links[i].link" target="_blank" [attr.title]="links.link_categories[1].links[i].description">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i].icon}}</i>
+            <h5 class="dashboard-link-title">{{links.link_categories[1].links[i].name}}</h5>
+          </a>
+        </td>
+        <td class="dashboard-links" (click)="goHome()" *ngIf="links.link_categories[1].links.length < 12">
+          <i class="material-icons md-48">remove_circle</i>
+          <h5>SEE LESS</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:12:24; let i = index">
+          <a [attr.href]="links.link_categories[1].links[i+12].link" target="_blank" [attr.title]="links.link_categories[1].links[i+12].description">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i+12].icon}}</i>
+            <h5 class="dashboard-link-title">{{links.link_categories[1].links[i+12].name}}</h5>
+          </a>
+        </td>
+        <td class="dashboard-links" (click)="goHome()" *ngIf="links.link_categories[1].links.length >= 12 && links.link_categories[1].links.length < 24">
+          <i class="material-icons md-48">remove_circle</i>
+          <h5>SEE LESS</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:24:36; let i = index">
+          <a [attr.href]="links.link_categories[1].links[i+24].link" target="_blank" [attr.title]="links.link_categories[1].links[i+24].description">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i+24].icon}}</i>
+            <h5 class="dashboard-link-title">{{links.link_categories[1].links[i+24].name}}</h5>
+          </a>
+        </td>
+        <td class="dashboard-links" (click)="goHome()" *ngIf="links.link_categories[1].links.length >= 24 && links.link_categories[1].links.length < 36">
+          <i class="material-icons md-48">remove_circle</i>
+          <h5>SEE LESS</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:36:48; let i = index">
+          <a [attr.href]="links.link_categories[1].links[i+36].link" target="_blank" [attr.title]="links.link_categories[1].links[i+36].description">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i+36].icon}}</i>
+            <h5 class="dashboard-link-title">{{links.link_categories[1].links[i+36].name}}</h5>
+          </a>
+        </td>
+        <td class="dashboard-links" (click)="goHome()" *ngIf="links.link_categories[1].links.length >= 36 && links.link_categories[1].links.length < 48">
+          <i class="material-icons md-48">remove_circle</i>
+          <h5>SEE LESS</h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:48; let i = index">
+          <a [attr.href]="links.link_categories[1].links[i+48].link" target="_blank" [attr.title]="links.link_categories[1].links[i+48].description">
+            <i class="material-icons md-48">{{links.link_categories[1].links[i+48].icon}}</i>
+            <h5 class="dashboard-link-title">{{links.link_categories[1].links[i+48].name}}</h5>
+          </a>
+        </td>
+        <td class="dashboard-links" (click)="goHome()" *ngIf="links.link_categories[1].links.length >= 48">
+          <i class="material-icons md-48">remove_circle</i>
+          <h5>SEE LESS</h5>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <img class="school-pic" src="../../Finance.png">
+  </div>
+</div>

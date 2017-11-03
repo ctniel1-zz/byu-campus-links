@@ -1,0 +1,123 @@
+{
+  "icons_library" : {
+    "description" : "Google Material Icons",
+    "website" : "https://material.io/icons/",
+    "icons_url" : "https://fonts.googleapis.com/icon?family=Material+Icons"
+  },
+  "link_categories" : [
+    {
+      "category" : "School",
+      "links" : [
+        {
+          "name" : "AIM",
+          "description" : "Academic information",
+          "link" : "https://aim.byu.edu",
+          "icon" : "school",
+          "tags" : [
+            "school",
+            "grades",
+            "academic"
+          ]
+        },
+        {
+          "name" : "Learning Suite",
+          "description" : "Classes and schedule",
+          "link" : "https://learningsuite.byu.edu",
+          "icon" : "class",
+          "tags" : [
+            "classes",
+            "schedule",
+            "academic"
+          ]
+        },
+        {
+          "name" : "My Financial Center",
+          "description" : "Tuition and fees",
+          "link" : "https://link.byu.edu/mfc",
+          "icon" : "attach_money",
+          "tags" : [
+            "tuition",
+            "fees"
+          ]
+        }
+      ]
+    },
+    {
+      "category" : "Work",
+      "links" : [
+        {
+          "name" : "Time Clock",
+          "description" : "Time Clock",
+          "link" : "https://ytime.byu.edu",
+          "icon" : "access_time",
+          "tags" : [
+            "work",
+            "time clock",
+            "time punch"
+          ]
+        },
+        {
+          "name" : "Employee Discounts",
+          "description" : "Employee Discounts",
+          "link" : "https://byudiscounts.byu.edu",
+          "icon" : "card_giftcard",
+          "tags" : [
+            "discounts",
+            "employee benefits",
+            "benefits"
+          ]
+        }
+      ]
+    },
+    {
+      "category" : "Communication",
+      "links" : [
+        {
+          "name" : "BYU Directory",
+          "description" : "Look up person",
+          "link" : "https://y.byu.edu/ry/ae/prod/person/cgi/personLookup.cgi",
+          "icon" : "people",
+          "tags" : [
+            "directory",
+            "find employee"
+          ]
+        },
+        {
+          "name" : "Email Alias Manager",
+          "description" : "Manage email aliases",
+          "link" : "https://home.byu.edu/eam/emailAliasManager.htm",
+          "icon" : "email",
+          "tags" : [
+            "email",
+            "email aliases"
+          ]
+        },
+        {
+          "name" : "Personal Information",
+          "description" : "Update personal information",
+          "link" : "https://y.byu.edu/ry/ae/prod/person/cgi/personSummary.cgi",
+          "icon" : "account_circle",
+          "tags" : [
+            "personal information"
+          ]
+        }
+      ]
+    },
+    {
+      "category" : "My Favorites",
+      "links" : [
+        {
+          "name" : "AIM",
+          "description" : "Academic information",
+          "link" : "https://y.byu.edu/ry/ae/prod/user_help/cgi/mainMenu.cgi",
+          "icon" : "school",
+          "tags" : [
+            "school",
+            "grades",
+            "academic"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+<div class="main mobile">
+    <div (click)="gotoSchool()" class="category">
+      <img class="category-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/hbll.png">
+      <h2>{{links.link_categories[0].category}}</h2>
+    </div>
+    <div (click)="gotoWork()" class="category">
+      <img class="category-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/student-employment.png">
+      <h2>{{links.link_categories[1].category}}</h2>
+    </div>
+    <div (click)="gotoCommunication()" class="category">
+      <img class="category-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/YMessage.png">
+      <h2>{{links.link_categories[2].category}}</h2>
+    </div>
+    <div (click)="gotoFavorites()" class="category">
+      <img class="category-icon" src="https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png">
+      <h2>{{links.link_categories[3].category}}</h2>
+    </div>
+</div>
+
+<div class="main desktop">
+  <table class="category">
+    <tr class="category-row">
+        <div class="category-link">
+            <h2 class="category-header">{{links.link_categories[0].category}}</h2>
+            <td>
+                <table>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[0].links | slice:0:3; let i = index">
+                            <a [attr.href]="links.link_categories[0].links[i].link" target="_blank" [attr.title]="links.link_categories[0].links[i].description">
+                              <i class="material-icons md-48">{{links.link_categories[0].links[i].icon}} </i> <!--&#8599;-->
+                                <h5 class="dashboard-link-title">{{links.link_categories[0].links[i].name}}</h5>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[0].links | slice:3:5; let i = index">
+                            <a [attr.href]="links.link_categories[0].links[i+3].link" target="_blank" [attr.title]="links.link_categories[0].links[i+3].description">
+                              <i class="material-icons md-48">{{links.link_categories[0].links[i+3].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[0].links[i+3].name}}</h5>
+                            </a>
+                        </td>
+                        <td class="dashboard-links" (click)="gotoSchool()">
+                          <i class="material-icons md-48">add_circle</i>
+                            <h5>SEE MORE</h5>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </div>
+        <div class="category-link">
+            <h2 class="category-header">{{links.link_categories[1].category}}</h2>
+            <td>
+                <table>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:0:3; let i = index">
+                            <a [attr.href]="links.link_categories[1].links[i].link" target="_blank" [attr.title]="links.link_categories[1].links[i].description">
+                              <i class="material-icons md-48">{{links.link_categories[1].links[i].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[1].links[i].name}}</h5>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[1].links | slice:3:5; let i = index">
+                            <a [attr.href]="links.link_categories[1].links[i+3].link" target="_blank" [attr.title]="links.link_categories[1].links[i+3].description">
+                              <i class="material-icons md-48">{{links.link_categories[1].links[i+3].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[1].links[i+3].name}}</h5>
+                            </a>
+                        </td>
+                        <td class="dashboard-links" (click)="gotoWork()">
+                          <i class="material-icons md-48">add_circle</i>
+                            <h5>SEE MORE</h5>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </div>
+        <div class="category-link">
+            <h2 class="category-header">{{links.link_categories[2].category}}</h2>
+            <td>
+                <table>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[2].links | slice:0:3; let i = index">
+                            <a [attr.href]="links.link_categories[2].links[i].link" target="_blank" [attr.title]="links.link_categories[2].links[i].description">
+                              <i class="material-icons md-48">{{links.link_categories[2].links[i].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[2].links[i].name}}</h5>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[2].links | slice:3:5; let i = index">
+                            <a [attr.href]="links.link_categories[2].links[i+3].link" target="_blank" [attr.title]="links.link_categories[2].links[i+3].description">
+                              <i class="material-icons md-48">{{links.link_categories[2].links[i+3].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[2].links[i+3].name}}</h5>
+                            </a>
+                        </td>
+                        <td class="dashboard-links" (click)="gotoCommunication()">
+                          <i class="material-icons md-48">add_circle</i>
+                            <h5>SEE MORE</h5>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </div>
+        <div class="category-link">
+            <h2 class="category-header">{{links.link_categories[3].category}}</h2>
+            <td>
+                <table>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[3].links | slice:0:3; let i = index">
+                            <a [attr.href]="links.link_categories[3].links[i].link" target="_blank" [attr.title]="links.link_categories[3].links[i].description">
+                              <i class="material-icons md-48">{{links.link_categories[3].links[i].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[3].links[i].name}}</h5>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dashboard-links" *ngFor="let link of links.link_categories[3].links | slice:3:5; let i = index">
+                            <a [attr.href]="links.link_categories[3].links[i+3].link" target="_blank" [attr.title]="links.link_categories[3].links[i+3].description">
+                              <i class="material-icons md-48">{{links.link_categories[3].links[i+3].icon}}</i>
+                                <h5 class="dashboard-link-title">{{links.link_categories[3].links[i+3].name}}</h5>
+                            </a>
+                        </td>
+                        <td class="dashboard-links" (click)="gotoFavorites()">
+                          <i class="material-icons md-48">add_circle</i>
+                            <h5>SEE MORE</h5>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </div>
+    </tr>
+  </table>
+  <div>
+      <img class="dashboard-pic" src="../Main.png">
+  </div>
+  <!--<div>-->
+      <!--<object type="text/html" data="https://my.byu.edu" width="1800px" height="450px" style="overflow: auto; border: 5px outset navy; border-radius: 15px; margin-top: 20px"></object>-->
+  <!--</div>-->
+</div>

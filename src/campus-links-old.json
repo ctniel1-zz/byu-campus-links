@@ -1,0 +1,821 @@
+{
+  "results": {
+    "icons": true,
+    "titles": true,
+    "categories": [
+      {
+        "category": "School",
+        "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/hbll.png",
+        "links": [
+          {
+            "id": "000",
+            "name": "AIM",
+            "description": "Academic information",
+            "external": true,
+            "link": "https://aim.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/search-student-employment.png",
+            "tags": [
+              {
+                "tag": "school"
+              },
+              {
+                "tag": "grades"
+              },
+              {
+                "tag": "academic"
+              }
+            ]
+          },
+          {
+            "id": "001",
+            "name": "Alumni Career Networking Tool",
+            "description": "Connect with Alumni",
+            "external": true,
+            "link": "https://alumnicareers.byu.edu/networking/index2.cfm",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/just%20admitted%20international.png",
+            "tags": [
+              {
+                "tag": "alumni"
+              },
+              {
+                "tag": "connect"
+              },
+              {
+                "tag": "network"
+              }
+            ]
+          },
+          {
+            "id": "002",
+            "name": "Apply for Graduation",
+            "description": "Apply to Graduate",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/acad_plan/cgi/stdGraduationApp.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/accept-decline-admission.png",
+            "tags": [
+              {
+                "tag": "graduation"
+              },
+              {
+                "tag": "apply"
+              }
+            ]
+          },
+          {
+            "id": "003",
+            "name": "Athlete",
+            "description": "For Student Athletes",
+            "external": true,
+            "link": "https://athlete.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/athletic-events.png",
+            "tags": [
+              {
+                "tag": "athlete"
+              },
+              {
+                "tag": "student"
+              }
+            ]
+          },
+          {
+            "id": "004",
+            "name": "Learning Suite",
+            "description": "Classes and schedule",
+            "external": true,
+            "link": "https://learningsuite.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/learning-suite_0.png",
+            "tags": [
+              {
+                "tag": "classes"
+              },
+              {
+                "tag": "schedule"
+              },
+              {
+                "tag": "academic"
+              }
+            ]
+          },
+          {
+            "id": "005",
+            "name": "Gradebook",
+            "description": "Look up your Grades",
+            "external": true,
+            "link": "https://my.byu.edu/uPortal/f/u20l1s5/p/courses.n63/max/render.uP?pCp",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/grades.png",
+            "tags": [
+              {
+                "tag": "grades"
+              },
+              {
+                "tag": "academic"
+              }
+            ]
+          },
+          {
+            "id": "006",
+            "name": "Graduate School App Status",
+            "description": "Check the Status of your Graduate School Application",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/graduate_admissions/cgi/gradAdmissionsStatus.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/graduate-studies_2.png",
+            "tags": [
+              {
+                "tag": "graduate"
+              },
+              {
+                "tag": "school"
+              },
+              {
+                "tag": "application"
+              }
+            ]
+          },
+          {
+            "id": "007",
+            "name": "Guest Access",
+            "description": "Provide Guest Access for a Friend",
+            "external": true,
+            "link": "https://guestaccess.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/newstudent_0.png",
+            "tags": [
+              {
+                "tag": "guest"
+              },
+              {
+                "tag": "access"
+              }
+            ]
+          },
+          {
+            "id": "008",
+            "name": "My Book List",
+            "description": "A list of Textbooks you need",
+            "external": true,
+            "link": "https://booklist.byu.edu/index.cfm",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybooklist.png",
+            "tags": [
+              {
+                "tag": "books"
+              },
+              {
+                "tag": "list"
+              }
+            ]
+          },
+          {
+            "id": "009",
+            "name": "My Dining Account",
+            "description": "Check the Status of your Meal Plan",
+            "external": true,
+            "link": "https://sasapps.byu.edu/services/dining",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/meal-plan.png",
+            "tags": [
+              {
+                "tag": "dining"
+              },
+              {
+                "tag": "account"
+              },
+              {
+                "tag": "meal"
+              }
+            ]
+          },
+          {
+            "id": "010",
+            "name": "My Financial Center",
+            "description": "Tuition and fees",
+            "external": true,
+            "link": "https://link.byu.edu/mfc",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/financial-aid-office_0.png",
+            "tags": [
+              {
+                "tag": "tuition"
+              },
+              {
+                "tag": "fees"
+              }
+            ]
+          },
+          {
+            "id": "011",
+            "name": "My Housing Account",
+            "description": "Student Housing",
+            "external": true,
+            "link": "https://sasapps.byu.edu/services/main/default.aspx",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/off-campus-housing-waiver.png",
+            "tags": [
+              {
+                "tag": "housing"
+              },
+              {
+                "tag": "account"
+              }
+            ]
+          },
+          {
+            "id": "012",
+            "name": "MyMAP",
+            "description": "Plan out your Classes",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/mymap/cgi/summary.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/my-map.png",
+            "tags": [
+              {
+                "tag": "classes"
+              },
+              {
+                "tag": "plan"
+              }
+            ]
+          },
+          {
+            "id": "013",
+            "name": "Online Transcript Request",
+            "description": "Request your Transcript",
+            "external": true,
+            "link": "https://transcripts.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/admissions-application_0.png",
+            "tags": [
+              {
+                "tag": "transcript"
+              }
+            ]
+          },
+          {
+            "id": "014",
+            "name": "Register for Classes",
+            "description": "Class Registration",
+            "external": true,
+            "link": "https://home.byu.edu/webapp/mymap/register.htm",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/class-registration.png",
+            "tags": [
+              {
+                "tag": "register"
+              },
+              {
+                "tag": "classes"
+              }
+            ]
+          },
+          {
+            "id": "015",
+            "name": "Scholarship Application",
+            "description": "Apply for Scholarships",
+            "external": true,
+            "link": "https://sa.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_SLR_STUDENT.Y_SLR_STU_APP_LAND.GBL",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/accept-decline-admission.png",
+            "tags": [
+              {
+                "tag": "scholarship"
+              },
+              {
+                "tag": "application"
+              }
+            ]
+          },
+          {
+            "id": "016",
+            "name": "Scholarships",
+            "description": "Check your Scholarships",
+            "external": true,
+            "link": "https://sa.byu.edu/psc/ps/EMPLOYEE/HRMS/c/Y_MY_FINANCIAL_CENTER.Y_SLR_STU_ACT_FLU.GBL",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/loan-entrance-couseling.png",
+            "tags": [
+              {
+                "tag": "scholarship"
+              }
+            ]
+          },
+          {
+            "id": "017",
+            "name": "Student Endorsement",
+            "description": "Manage your Ecclesiastical Endorsement",
+            "external": true,
+            "link": "https://endorse.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/ecclesiastical-endorsement.png",
+            "tags": [
+              {
+                "tag": "endorsement"
+              },
+              {
+                "tag": "student"
+              }
+            ]
+          },
+          {
+            "id": "018",
+            "name": "Student Jobs",
+            "description": "Find Jobs on Campus",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_STUDENT_RECRUITING.Y_HRS_APPL_HOME.GBL?siteid=50",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/search-student-employment.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "jobs"
+              },
+              {
+                "tag": "employment"
+              }
+            ]
+          },
+          {
+            "id": "019",
+            "name": "Student Ratings",
+            "description": "Submit Student Ratings",
+            "external": true,
+            "link": "https://studentratings.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/accept-decline-admission.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "ratings"
+              }
+            ]
+          },
+          {
+            "id": "020",
+            "name": "Student Voting",
+            "description": "Vote for Student Officers",
+            "external": true,
+            "link": "https://vote.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/class-registration.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "voting"
+              }
+            ]
+          },
+          {
+            "id": "021",
+            "name": "Student/Private Health Plans",
+            "description": "Manage your Health Plan",
+            "external": true,
+            "link": "https://sa.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_MY_FINANCIAL_CENTER.MY_MFC_SHC_COVERAGE.GBL?nb",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/waive-student-health-plan.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "health"
+              }
+            ]
+          },
+          {
+            "id": "022",
+            "name": "Syllabi",
+            "description": "BYU Syllabi",
+            "external": true,
+            "link": "https://syllabus.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/First-Year%20Experience%20Office%20Logo.png",
+            "tags": [
+              {
+                "tag": "syllabus"
+              }
+            ]
+          },
+          {
+            "id": "023",
+            "name": "Testing Center",
+            "description": "Check Testing Center Hours",
+            "external": true,
+            "link": "https://testing.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/testing-center.png",
+            "tags": [
+              {
+                "tag": "testing"
+              },
+              {
+                "tag": "exams"
+              }
+            ]
+          },
+          {
+            "id": "024",
+            "name": "University Policies/Procedures",
+            "description": "Learn about BYU Policies and Procedures",
+            "external": true,
+            "link": "https://policy.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png",
+            "tags": [
+              {
+                "tag": "policy"
+              }
+            ]
+          },
+          {
+            "id": "025",
+            "name": "YMessage",
+            "description": "Check your Messages",
+            "external": true,
+            "link": "https://ymessage.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/YMessage.png",
+            "tags": [
+              {
+                "tag": "messages"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Work",
+        "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/student-employment.png",
+        "links": [
+          {
+            "id": "100",
+            "name": "ACA Hours",
+            "description": "Check your Hours",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_EMPLOYEE_SELF_SERVICE.Y_EE_ACADEPRP.GBL",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/scholarship-hours.png",
+            "tags": [
+              {
+                "tag": "hours"
+              }
+            ]
+          },
+          {
+            "id": "101",
+            "name": "BYU Bridge",
+            "description": "Connect college to career",
+            "external": true,
+            "link": "https://byu-csm.symplicity.com",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/uta_0.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "career"
+              }
+            ]
+          },
+          {
+            "id": "102",
+            "name": "BYU Compliance Hotline",
+            "description": "Report Compliance Issues",
+            "external": true,
+            "link": "https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=17652",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/university-core.png",
+            "tags": [
+              {
+                "tag": "compliance"
+              },
+              {
+                "tag": "hotline"
+              }
+            ]
+          },
+          {
+            "id": "103",
+            "name": "Direct Deposit",
+            "description": "Manage your direct deposit payment method",
+            "external": true,
+            "link": "https://link.byu.edu/dirdep",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/cost-attendance.png",
+            "tags": [
+              {
+                "tag": "deposit"
+              },
+              {
+                "tag": "paycheck"
+              }
+            ]
+          },
+          {
+            "id": "104",
+            "name": "Time Clock",
+            "description": "Clock In or Out",
+            "external": true,
+            "link": "https://ytime.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/payroll.png",
+            "tags": [
+              {
+                "tag": "work"
+              },
+              {
+                "tag": "time clock"
+              },
+              {
+                "tag": "time punch"
+              }
+            ]
+          },
+          {
+            "id": "105",
+            "name": "Employee Discounts",
+            "description": "Get Great Savings",
+            "external": true,
+            "link": "https://byudiscounts.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/short-term-loan_0.png",
+            "tags": [
+              {
+                "tag": "discounts"
+              },
+              {
+                "tag": "employee benefits"
+              },
+              {
+                "tag": "benefits"
+              }
+            ]
+          },
+          {
+            "id": "106",
+            "name": "Hiring Managers - YJobs",
+            "description": "For Hiring Managers",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_STAFF_RECRUITING.Y_HRS_PORTAL.GBL",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png",
+            "tags": [
+              {
+                "tag": "manager"
+              },
+              {
+                "tag": "jobs"
+              }
+            ]
+          },
+          {
+            "id": "107",
+            "name": "Human Resources/Payroll",
+            "description": "Connect with Human Resources",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/h/?tab=DEFAULT",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/cost-attendance.png",
+            "tags": [
+              {
+                "tag": "payroll"
+              }
+            ]
+          },
+          {
+            "id": "108",
+            "name": "Student Jobs",
+            "description": "Find Student Employment on Campus",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/c/Y_STUDENT_RECRUITING.Y_HRS_APPL_HOME.GBL?siteid=50",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/search-student-employment.png",
+            "tags": [
+              {
+                "tag": "jobs"
+              },
+              {
+                "tag": "student"
+              }
+            ]
+          },
+          {
+            "id": "109",
+            "name": "View Paycheck",
+            "description": "Check your Paycheck",
+            "external": true,
+            "link": "https://hrms.byu.edu/psp/ps/EMPLOYEE/HRMS/c/ROLE_EMPLOYEE.PY_IC_PAY_INQ.GBL?NAVSTACK=Clear",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/cost-attendance.png",
+            "tags": [
+              {
+                "tag": "paycheck"
+              }
+            ]
+          },
+          {
+            "id": "110",
+            "name": "Y-Expense",
+            "description": "Submit Expense Reports",
+            "external": true,
+            "link": "https://adminsystems.byu.edu/expense/exp_main.asp",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png",
+            "tags": [
+              {
+                "tag": "expense"
+              }
+            ]
+          },
+          {
+            "id": "111",
+            "name": "Y-Travel",
+            "description": "Submit Travel Forms",
+            "external": true,
+            "link": "https://home.byu.edu/webapp/sso/getthere/login.htm",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/parking.png",
+            "tags": [
+              {
+                "tag": "travel"
+              }
+            ]
+          },
+          {
+            "id": "112",
+            "name": "YTrain",
+            "description": "Train for your Job",
+            "external": true,
+            "link": "https://ytrain.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png",
+            "tags": [
+              {
+                "tag": "train"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Communication",
+        "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/YMessage.png",
+        "links": [
+          {
+            "id": "200",
+            "name": "BYU Online Directory",
+            "description": "Look up person",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/person/cgi/personLookup.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/students.png",
+            "tags": [
+              {
+                "tag": "directory"
+              },
+              {
+                "tag": "find employee"
+              }
+            ]
+          },
+          {
+            "id": "201",
+            "name": "Directory (Alumni)",
+            "description": "Find Alumni",
+            "external": true,
+            "link": "https://alumni.byu.edu/find-alumni/alumni-directory",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/students.png",
+            "tags": [
+              {
+                "tag": "directory"
+              },
+              {
+                "tag": "find alumni"
+              }
+            ]
+          },
+          {
+            "id": "202",
+            "name": "Email Alias Manager",
+            "description": "Manage email aliases",
+            "external": true,
+            "link": "https://home.byu.edu/eam/emailAliasManager.htm",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/computer-rentals_0.png",
+            "tags": [
+              {
+                "tag": "email"
+              },
+              {
+                "tag": "email aliases"
+              }
+            ]
+          },
+          {
+            "id": "203",
+            "name": "Email Filter",
+            "description": "Manage email filters",
+            "external": true,
+            "link": "https://home.byu.edu/emailfilter",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/computer-rentals_0.png",
+            "tags": [
+              {
+                "tag": "email"
+              },
+              {
+                "tag": "filter"
+              }
+            ]
+          },
+          {
+            "id": "204",
+            "name": "Personal Information",
+            "description": "Update personal information",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/person/cgi/personSummary.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/change-name_0.png",
+            "tags": [
+              {
+                "tag": "personal information"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "My Favorites",
+        "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/mybyu.png",
+        "links": [
+          {
+            "id": "300",
+            "name": "AIM",
+            "description": "Academic information",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/user_help/cgi/mainMenu.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/search-student-employment.png",
+            "tags": [
+              {
+                "tag": "school"
+              },
+              {
+                "tag": "grades"
+              },
+              {
+                "tag": "academic"
+              }
+            ]
+          },
+          {
+            "id": "301",
+            "name": "BYU Bridge",
+            "description": "Bridge the Gap between College and Career",
+            "external": true,
+            "link": "https://bridge.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/uta_0.png",
+            "tags": [
+              {
+                "tag": "school"
+              },
+              {
+                "tag": "career"
+              }
+            ]
+          },
+          {
+            "id": "302",
+            "name": "BYU OneStop",
+            "description": "Check out BYU's various student service",
+            "external": true,
+            "link": "https://onestop.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/onestop_0.png",
+            "tags": [
+              {
+                "tag": "school"
+              }
+            ]
+          },
+          {
+            "id": "303",
+            "name": "Learning Suite",
+            "description": "Use BYU Learning Suite",
+            "external": true,
+            "link": "https://learningsuite.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/learning-suite_0.png",
+            "tags": [
+              {
+                "tag": "academic"
+              },
+              {
+                "tag": "grades"
+              }
+            ]
+          },
+          {
+            "id": "304",
+            "name": "MyMap",
+            "description": "BYU's student planning system",
+            "external": true,
+            "link": "https://y.byu.edu/ry/ae/prod/mymap/cgi/summary.cgi",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/my-map.png",
+            "tags": [
+              {
+                "tag": "plan"
+              },
+              {
+                "tag": "student"
+              }
+            ]
+          },
+          {
+            "id": "305",
+            "name": "University Gradebook",
+            "description": "Track student progress and performance",
+            "external": true,
+            "link": "https://learningsuite.byu.edu",
+            "icon": "https://onestop.byu.edu/sites/onestop.byu.edu/files/grades.png",
+            "tags": [
+              {
+                "tag": "student"
+              },
+              {
+                "tag": "grades"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,29 @@
+<div id="portalPage">
+  <div id="portalPageInner">
+    <div id="portalPageHeader">
+      <div id="portalPageHeaderInner">
+        <div id="portalPageBar">
+          <i class="material-icons" style="color: white" (click)="openSettings()">menu</i>
+          <div *ngIf="activeSettings" class="settings">
+            <settings></settings>
+          </div>
+          <b id="site-name">{{name}}</b>
+          <div id="site-title">
+            <h3><b>Campus Links</b></h3>
+          </div>
+          <div id="search-text">
+            Search Links:
+            <input id="search-bar" type="search" name="search" placeholder="Search...">
+          </div>
+        </div>
+        <div id="portalLogo">
+          <img id = "mobile-picture-header" src="https://www.lds.org/bc/content/ldsorg/church/news/2015/10/30/1347137byu580.jpg">
+          <img id = "desktop-picture-header" src="https://www.lds.org/bc/content/ldsorg/church/news/2015/10/30/1347137byu580.jpg">
+        </div>
+      </div>
+    </div>
+    <div id="app-display">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

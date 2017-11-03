@@ -1,0 +1,237 @@
+<div id="setting-pop-in-mobile" *ngIf="mobileSettings">
+  <h2 class="setting-title"><b>Settings</b></h2>
+  <table>
+    <tr>
+      <td>
+        <div class="add-link">
+          <h5><b>Add Personal Link</b></h5>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="addLinkMobile()">add_circle</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="add-set">
+          <h5><b>Add Link Set</b></h5>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="addSetMobile()">add_circle</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="manage-links">
+          <h5><b>Manage Links</b></h5>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="manageLinkMobile()">build</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="setting-pop-in-desktop">
+  <h2 class="setting-title"><b>Settings</b></h2>
+  <table>
+    <tr>
+      <td>
+        <div class="add-link">
+          <b>Add Custom Link</b>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="addLink()">add_circle</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="add-link">
+          <b>Add Link Set</b>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="addSet()">add_circle</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="manage-links">
+          <b>Manage Links</b>
+        </div>
+      </td>
+      <td>
+        <i class="material-icons add-link-button" style="color: #34A6C1" (click)="manageLink()">build</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="create-link" *ngIf="linkAdd">
+  <h2>Add your own Link</h2>
+  <i class="material-icons exit-add-link" (click)="addedLinkMobile()" style="color: black">clear</i>
+  <form onsubmit="addedLinkMobile()">
+    <label>Link Category: </label>
+    <input id="category" name="linkCategory" type="text" list="categories" placeholder="Select Category" [(ngModel)]="selectedCategory" required />
+    <datalist id="categories">
+      <option value="School"></option>
+      <option value="Work"></option>
+      <option value="Communication"></option>
+      <option value="My Favorites"></option>
+    </datalist>
+    <br/>
+    <label>Link Title: </label>
+    <input id="title" name="linkTitle" type="text" placeholder="Name your Link" [(ngModel)]="selectedTitle" autofocus required />
+    <br/>
+    <label>Link Icon: </label>
+    <!--<input id="icon" name="linkIcon" type="text" placeholder="Select an Icon" [(ngModel)]="selectedIcon" autofocus />-->
+    <button type="button" (click)="toggleDefaultIcons()">Select Icon</button>
+    <i class="material-icons md-36">{{selectedIcon}}</i>
+    <br/>
+    <label>Link URL: </label>
+    <input id="url" name="linkUrl" type="text" placeholder="example.com" [(ngModel)]="selectedURL" autofocus required />
+    <br/>
+    <button type="submit" (click)="submitLink()">Submit</button>
+  </form>
+</div>
+
+<div class="add-link-set" *ngIf="linkSet">
+  <h2>Choose a set of Links</h2>
+  <i class="material-icons exit-add-link" (click)="addedSetMobile()" style="color: black">clear</i>
+  <div *ngIf="BYUSets">
+    <table class="toggle-sets">
+      <tr>
+        <td class="set-titles-active" (click)="toggleBYUSets()">
+          BYU Sets
+        </td>
+        <td class="set-titles-inactive" (click)="toggleOtherSets()">
+          Other Sets
+        </td>
+      </tr>
+    </table>
+    <table class="link-set-table">
+      <tr>
+        <td class="link-set">
+          BYU Homepage Menus
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          BYU Homepage Favorites
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          Current RouteY Menus
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div *ngIf="OtherSets">
+    <table class="toggle-sets">
+      <tr>
+        <td class="set-titles-inactive" (click)="toggleBYUSets()">
+          BYU Sets
+        </td>
+        <td class="set-titles-active" (click)="toggleOtherSets()">
+          Other Sets
+        </td>
+      </tr>
+    </table>
+    <table class="link-set-table">
+      <tr>
+        <td class="link-set">
+          Sports
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          Academics
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          News
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          Admin
+        </td>
+      </tr>
+      <tr>
+        <td class="link-set">
+          Finance
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="manage-link" *ngIf="linkManage">
+  <h2>Manage your Links</h2>
+  <i class="material-icons exit-add-link" (click)="managedLinkMobile()" style="color: black">clear</i>
+  <div class="title-switch">
+    <b>Toggle Icons</b>
+    <div class="onoffswitch" *ngIf="links.results?.icons">
+      <input type="checkbox" name="iconswitch" class="onoffswitch-checkbox" id="iconSwitchOn" checked>
+      <label (click)="toggleIcons()" class="onoffswitch-label" for="iconSwitchOn">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <div class="onoffswitch" *ngIf="!links.results?.icons">
+      <input type="checkbox" name="iconswitch" class="onoffswitch-checkbox" id="iconSwitchOff">
+      <label (click)="toggleIcons()" class="onoffswitch-label" for="iconSwitchOff">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+  </div>
+  <div class="title-switch">
+    <b>Toggle Titles</b>
+    <div class="onoffswitch" *ngIf="links.results?.titles">
+      <input type="checkbox" name="titleswitch" class="onoffswitch-checkbox" id="titleSwitchOn" checked>
+      <label (click)="toggleTitles()" class="onoffswitch-label" for="titleSwitchOn">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <div class="onoffswitch" *ngIf="!links.results?.titles">
+      <input type="checkbox" name="titleswitch" class="onoffswitch-checkbox" id="titleSwitchOff">
+      <label (click)="toggleTitles()" class="onoffswitch-label" for="titleSwitchOff">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="default-icons" *ngIf="defaultIconList">
+  <h2>Select an Icon</h2>
+  <table id="icon-table">
+    <tr>
+      <td *ngFor="let icon of defaultIcons | slice:0:5">
+        <i class="material-icons md-48 choose-icon" (click)="selectIcon(icon)">{{icon}}</i>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let icon of defaultIcons | slice:5:10">
+        <i class="material-icons md-48 choose-icon" (click)="selectIcon(icon)">{{icon}}</i>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let icon of defaultIcons | slice:10:15">
+        <i class="material-icons md-48 choose-icon" (click)="selectIcon(icon)">{{icon}}</i>
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let icon of defaultIcons | slice:15:20">
+        <i class="material-icons md-48 choose-icon" (click)="selectIcon(icon)">{{icon}}</i>
+      </td>
+    </tr>
+  </table>
+</div>
