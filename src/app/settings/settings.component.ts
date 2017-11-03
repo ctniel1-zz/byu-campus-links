@@ -167,11 +167,11 @@ export class SettingsComponent {
     this.defaultIconList = true;
   }
 
-  selectIcon(icon) {
-    this.selectedIcon = icon;
-    this.defaultIconList = false;
-    this.linkAdd = true;
-  }
+  // selectIcon(icon) {
+  //   this.selectedIcon = icon;
+  //   this.defaultIconList = false;
+  //   this.linkAdd = true;
+  // }
 
   submitLink() {
     console.log(this.selectedCategory + ", " + this.selectedTitle + ", " + this. selectedIcon + ", " + this.selectedURL);

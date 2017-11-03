@@ -150,11 +150,11 @@ var SettingsComponent = (function () {
         }
         this.defaultIconList = true;
     };
-    SettingsComponent.prototype.selectIcon = function (icon) {
-        this.selectedIcon = icon;
-        this.defaultIconList = false;
-        this.linkAdd = true;
-    };
+    // selectIcon(icon) {
+    //   this.selectedIcon = icon;
+    //   this.defaultIconList = false;
+    //   this.linkAdd = true;
+    // }
     SettingsComponent.prototype.submitLink = function () {
         console.log(this.selectedCategory + ", " + this.selectedTitle + ", " + this.selectedIcon + ", " + this.selectedURL);
     };
