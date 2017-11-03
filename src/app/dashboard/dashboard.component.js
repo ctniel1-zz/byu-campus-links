@@ -12,17 +12,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var http_1 = require("@angular/http");
-var campus_links_service_1 = require("../campus-links.service");
+// import {CampusLinksService} from '../campus-links.service';
 var DashboardComponent = (function () {
-    function DashboardComponent(campusLinksService, router) {
-        var _this = this;
-        this.campusLinksService = campusLinksService;
+    function DashboardComponent(router) {
         this.router = router;
         this.site = 'https://my.byu.edu';
-        this.links = this.campusLinksService
-            .load()
-            .subscribe(function (data) { console.log("Data: ", data); _this.links = data; });
     }
+    // links = this.campusLinksService
+    //   .load()
+    //   .subscribe(data => {console.log("Data: ", data); this.links = data});
     DashboardComponent.prototype.getSite = function () {
         return this.site;
     };
@@ -50,10 +48,9 @@ var DashboardComponent = (function () {
             styleUrls: ['dashboard.component.css'],
             // animations: [routerTransition()],
             // host: {'[@routerTransition]': ''},
-            providers: [http_1.Jsonp, campus_links_service_1.CampusLinksService]
+            providers: [http_1.Jsonp]
         }),
-        __metadata("design:paramtypes", [campus_links_service_1.CampusLinksService,
-            router_1.Router])
+        __metadata("design:paramtypes", [router_1.Router])
     ], DashboardComponent);
     return DashboardComponent;
 }());

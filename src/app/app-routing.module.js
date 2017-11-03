@@ -9,17 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
-var school_component_1 = require("./school/school.component");
-var work_component_1 = require("./work/work.component");
-var communication_component_1 = require("./communication/communication.component");
-var favorites_component_1 = require("./favorites/favorites.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
-    { path: 'school', component: school_component_1.SchoolComponent },
-    { path: 'work', component: work_component_1.WorkComponent },
-    { path: 'communication', component: communication_component_1.CommunicationComponent },
-    { path: 'favorites', component: favorites_component_1.FavoritesComponent },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

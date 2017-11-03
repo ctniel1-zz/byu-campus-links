@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 import {Jsonp} from '@angular/http';
 
 import {routerTransition} from '../router.animations';
-import {CampusLinksService} from '../campus-links.service';
+// import {CampusLinksService} from '../campus-links.service';
 
 @Component({
   moduleId: module.id,
@@ -12,19 +12,18 @@ import {CampusLinksService} from '../campus-links.service';
   styleUrls: ['dashboard.component.css'],
   // animations: [routerTransition()],
   // host: {'[@routerTransition]': ''},
-  providers: [Jsonp, CampusLinksService]
+  providers: [Jsonp]
 })
 
 export class DashboardComponent{
   site: string = 'https://my.byu.edu';
 
-  constructor(private campusLinksService: CampusLinksService,
-              private router: Router) {}
+  constructor(private router: Router) {}
 
 
-  links = this.campusLinksService
-    .load()
-    .subscribe(data => {console.log("Data: ", data); this.links = data});
+  // links = this.campusLinksService
+  //   .load()
+  //   .subscribe(data => {console.log("Data: ", data); this.links = data});
 
 
   getSite(){

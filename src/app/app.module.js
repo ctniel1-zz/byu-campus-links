@@ -14,12 +14,6 @@ var forms_1 = require("@angular/forms");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
-var school_component_1 = require("./school/school.component");
-var work_component_1 = require("./work/work.component");
-var communication_component_1 = require("./communication/communication.component");
-var favorites_component_1 = require("./favorites/favorites.component");
-var settings_component_1 = require("./settings/settings.component");
-var campus_links_service_1 = require("./campus-links.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,14 +28,8 @@ var AppModule = (function () {
             ],
             declarations: [app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,
-                school_component_1.SchoolComponent,
-                work_component_1.WorkComponent,
-                communication_component_1.CommunicationComponent,
-                favorites_component_1.FavoritesComponent,
-                settings_component_1.SettingsComponent
             ],
             bootstrap: [app_component_1.AppComponent],
-            providers: [campus_links_service_1.CampusLinksService]
         })
     ], AppModule);
     return AppModule;
