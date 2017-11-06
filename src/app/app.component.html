@@ -3,19 +3,18 @@
     <div id="portalPageHeader">
       <div id="portalPageHeaderInner">
         <div id="portalPageBar">
-          <i class="material-icons" style="color: white" (click)="openSettings()">menu</i>
-          <b id="site-name">{{name}}</b>
-          <div id="site-title">
-            <h3><b>Campus Links</b></h3>
-          </div>
-          <div id="search-text">
-            Search Links:
+          <b id="site-name"><img id="site-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/1200px-BYU_Cougars_logo.svg.png"/></b>
+          <form id="search-text">
             <input id="search-bar" type="search" name="search" placeholder="Search...">
+            <button id="search-submit" type="submit"><i class="material-icons">search</i></button>
+          </form>
+          <h6 id="user-name">Hello, {{name}}</h6>
+          <div id="toolbar">
+            <i class="material-icons account" title="Profile">account_circle</i>
+            <i class="material-icons drop-down" title="Settings">menu</i>
           </div>
         </div>
         <div id="portalLogo">
-          <img id = "mobile-picture-header" src="https://www.lds.org/bc/content/ldsorg/church/news/2015/10/30/1347137byu580.jpg">
-          <img id = "desktop-picture-header" src="https://www.lds.org/bc/content/ldsorg/church/news/2015/10/30/1347137byu580.jpg">
         </div>
       </div>
     </div>

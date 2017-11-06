@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'myBYU';
+        this.name = 'Chris';
         this.activeSettings = false;
     }
     AppComponent.prototype.openSettings = function () {
