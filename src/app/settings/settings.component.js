@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var common_1 = require("@angular/common");
 var router_1 = require("@angular/router");
-var router_animations_1 = require("../router.animations");
+// import {routerTransition} from '../router.animations';
 var campus_links_service_1 = require("../campus-links.service");
 var SettingsComponent = (function () {
     function SettingsComponent(campusLinksService, location, router) {
@@ -57,111 +57,8 @@ var SettingsComponent = (function () {
         ];
         this.links = this.campusLinksService
             .load()
-            .subscribe(function (data) { console.log("Data: ", data); _this.links = data; });
+            .subscribe(function (data) { _this.links = data; });
     }
-    SettingsComponent.prototype.addLink = function () {
-        this.linkAdd = true;
-        if (this.linkSet == true) {
-            this.linkSet = false;
-        }
-        if (this.linkManage == true) {
-            this.linkManage = false;
-        }
-        if (this.defaultIconList == true) {
-            this.defaultIconList = false;
-        }
-    };
-    SettingsComponent.prototype.addSet = function () {
-        this.linkSet = true;
-        if (this.linkAdd == true) {
-            this.linkAdd = false;
-        }
-        if (this.linkManage == true) {
-            this.linkManage = false;
-        }
-        if (this.defaultIconList == true) {
-            this.defaultIconList = false;
-        }
-    };
-    SettingsComponent.prototype.addLinkMobile = function () {
-        this.mobileSettings = false;
-        this.linkAdd = true;
-    };
-    SettingsComponent.prototype.addSetMobile = function () {
-        this.mobileSettings = false;
-        this.linkSet = true;
-    };
-    SettingsComponent.prototype.addedLink = function () {
-        this.linkAdd = false;
-    };
-    SettingsComponent.prototype.addedSet = function () {
-        this.linkSet = false;
-    };
-    SettingsComponent.prototype.addedSetMobile = function () {
-        this.linkSet = false;
-        this.mobileSettings = true;
-    };
-    SettingsComponent.prototype.addedLinkMobile = function () {
-        this.linkAdd = false;
-        this.mobileSettings = true;
-    };
-    SettingsComponent.prototype.manageLink = function () {
-        this.linkManage = true;
-        if (this.linkAdd == true) {
-            this.linkAdd = false;
-        }
-        if (this.linkSet == true) {
-            this.linkSet = false;
-        }
-        if (this.defaultIconList == true) {
-            this.defaultIconList = false;
-        }
-    };
-    SettingsComponent.prototype.manageLinkMobile = function () {
-        this.mobileSettings = false;
-        this.linkManage = true;
-    };
-    SettingsComponent.prototype.managedLink = function () {
-        this.linkManage = false;
-    };
-    SettingsComponent.prototype.managedLinkMobile = function () {
-        this.linkManage = false;
-        this.mobileSettings = true;
-    };
-    SettingsComponent.prototype.toggleBYUSets = function () {
-        if (this.BYUSets == false) {
-            this.BYUSets = true;
-        }
-        if (this.OtherSets == true) {
-            this.OtherSets = false;
-        }
-    };
-    SettingsComponent.prototype.toggleOtherSets = function () {
-        if (this.OtherSets == false) {
-            this.OtherSets = true;
-        }
-        if (this.BYUSets == true) {
-            this.BYUSets = false;
-        }
-    };
-    SettingsComponent.prototype.toggleDefaultIcons = function () {
-        if (this.linkAdd == true) {
-            this.linkAdd = false;
-        }
-        this.defaultIconList = true;
-    };
-    // selectIcon(icon) {
-    //   this.selectedIcon = icon;
-    //   this.defaultIconList = false;
-    //   this.linkAdd = true;
-    // }
-    SettingsComponent.prototype.submitLink = function () {
-        console.log(this.selectedCategory + ", " + this.selectedTitle + ", " + this.selectedIcon + ", " + this.selectedURL);
-    };
-    SettingsComponent.prototype.toggleIcons = function () {
-    };
-    SettingsComponent.prototype.toggleTitles = function () {
-    };
     SettingsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -169,8 +66,6 @@ var SettingsComponent = (function () {
             templateUrl: 'settings.component.html',
             styleUrls: ['settings.component.css'],
             providers: [http_1.Jsonp, campus_links_service_1.CampusLinksService],
-            animations: [router_animations_1.routerTransition()],
-            host: { '[@routerTransition]': '' }
         }),
         __metadata("design:paramtypes", [campus_links_service_1.CampusLinksService,
             common_1.Location,

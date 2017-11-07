@@ -3,7 +3,7 @@ import {Router} from '@angular/router';
 import {Jsonp} from '@angular/http';
 
 import {routerTransition} from '../router.animations';
-// import {CampusLinksService} from '../campus-links.service';
+import {CampusLinksService} from '../campus-links.service';
 
 @Component({
   moduleId: module.id,
@@ -12,19 +12,17 @@ import {routerTransition} from '../router.animations';
   styleUrls: ['dashboard.component.css'],
   // animations: [routerTransition()],
   // host: {'[@routerTransition]': ''},
-  providers: [Jsonp]
+  providers: [Jsonp, CampusLinksService]
 })
 
 export class DashboardComponent{
   site: string = 'https://my.byu.edu';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private campusLinksService: CampusLinksService) {}
 
-
-  // links = this.campusLinksService
-  //   .load()
-  //   .subscribe(data => {console.log("Data: ", data); this.links = data});
-
+  links = this.campusLinksService
+    .load()
+    .subscribe(data => {this.links = data});
 
   getSite(){
     return this.site;
@@ -35,8 +33,8 @@ export class DashboardComponent{
     console.log(this.site);
   }
 
-  gotoSchool(): void{
-    this.router.navigate(['/school']);
+  gotoAccount(): void{
+    this.router.navigate(['/account']);
   }
 
   gotoWork(): void{

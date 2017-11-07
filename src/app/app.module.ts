@@ -6,8 +6,10 @@ import {FormsModule} from '@angular/forms';
 
 import {AppRoutingModule} from './app-routing.module';
 
-import {AppComponent}  from './app.component';
+import {AppComponent}       from './app.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {AccountComponent}   from './account/account.component';
+import {SettingsComponent}  from './settings/settings.component';
 
 @NgModule({
   imports:      [BrowserModule,
@@ -19,6 +21,8 @@ import {DashboardComponent} from './dashboard/dashboard.component';
   ],
   declarations: [AppComponent,
                  DashboardComponent,
+                 AccountComponent,
+                 SettingsComponent
   ],
   bootstrap:    [AppComponent],
 })

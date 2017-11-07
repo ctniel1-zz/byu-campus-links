@@ -3,15 +3,15 @@
     <div id="portalPageHeader">
       <div id="portalPageHeaderInner">
         <div id="portalPageBar">
-          <b id="site-name"><img id="site-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/1200px-BYU_Cougars_logo.svg.png"/></b>
+          <b id="site-name"><img id="site-logo" (click)="gotoDashboard()" title="Home" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/1200px-BYU_Cougars_logo.svg.png"/></b>
           <form id="search-text">
             <input id="search-bar" type="search" name="search" placeholder="Search...">
             <button id="search-submit" type="submit"><i class="material-icons">search</i></button>
           </form>
           <h6 id="user-name">Hello, {{name}}</h6>
           <div id="toolbar">
-            <i class="material-icons account" title="Profile">account_circle</i>
-            <i class="material-icons drop-down" title="Settings">menu</i>
+            <i class="material-icons account" title="Profile" (click)="gotoAccount()">account_circle</i>
+            <i class="material-icons drop-down" title="Settings" (click)="openSettings()">menu</i>
           </div>
         </div>
         <div id="portalLogo">

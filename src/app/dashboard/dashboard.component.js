@@ -12,15 +12,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var http_1 = require("@angular/http");
-// import {CampusLinksService} from '../campus-links.service';
+var campus_links_service_1 = require("../campus-links.service");
 var DashboardComponent = (function () {
-    function DashboardComponent(router) {
+    function DashboardComponent(router, campusLinksService) {
+        var _this = this;
         this.router = router;
+        this.campusLinksService = campusLinksService;
         this.site = 'https://my.byu.edu';
+        this.links = this.campusLinksService
+            .load()
+            .subscribe(function (data) { _this.links = data; });
     }
-    // links = this.campusLinksService
-    //   .load()
-    //   .subscribe(data => {console.log("Data: ", data); this.links = data});
     DashboardComponent.prototype.getSite = function () {
         return this.site;
     };
@@ -28,8 +30,8 @@ var DashboardComponent = (function () {
         this.site = site;
         console.log(this.site);
     };
-    DashboardComponent.prototype.gotoSchool = function () {
-        this.router.navigate(['/school']);
+    DashboardComponent.prototype.gotoAccount = function () {
+        this.router.navigate(['/account']);
     };
     DashboardComponent.prototype.gotoWork = function () {
         this.router.navigate(['/work']);
@@ -48,9 +50,9 @@ var DashboardComponent = (function () {
             styleUrls: ['dashboard.component.css'],
             // animations: [routerTransition()],
             // host: {'[@routerTransition]': ''},
-            providers: [http_1.Jsonp]
+            providers: [http_1.Jsonp, campus_links_service_1.CampusLinksService]
         }),
-        __metadata("design:paramtypes", [router_1.Router])
+        __metadata("design:paramtypes", [router_1.Router, campus_links_service_1.CampusLinksService])
     ], DashboardComponent);
     return DashboardComponent;
 }());
