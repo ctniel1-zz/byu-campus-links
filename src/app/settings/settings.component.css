@@ -4,8 +4,11 @@
 
 @media only screen and (min-width: 769px) {
   div {
-    position: fixed;
-    left: 50%;
-    top: 20%;
+    position: absolute;
+    left: 20%;
+    top: 75px;
+    width: 60%;
+    height: auto;
+    background-color: white;
   }
 }

@@ -14,6 +14,7 @@ var forms_1 = require("@angular/forms");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
+var sidebar_component_1 = require("./sidebar/sidebar.component");
 var account_component_1 = require("./account/account.component");
 var settings_component_1 = require("./settings/settings.component");
 var AppModule = (function () {
@@ -30,6 +31,7 @@ var AppModule = (function () {
             ],
             declarations: [app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,
+                sidebar_component_1.SidebarComponent,
                 account_component_1.AccountComponent,
                 settings_component_1.SettingsComponent
             ],

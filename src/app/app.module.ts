@@ -8,6 +8,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent}       from './app.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {SidebarComponent}   from './sidebar/sidebar.component';
 import {AccountComponent}   from './account/account.component';
 import {SettingsComponent}  from './settings/settings.component';
 
@@ -21,6 +22,7 @@ import {SettingsComponent}  from './settings/settings.component';
   ],
   declarations: [AppComponent,
                  DashboardComponent,
+                 SidebarComponent,
                  AccountComponent,
                  SettingsComponent
   ],
