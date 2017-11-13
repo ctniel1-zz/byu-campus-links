@@ -108,11 +108,11 @@
     cursor: pointer;
   }
 
-  .account, .drop-down {
+  .account, .drop-down, .home {
     color: lightgray;
   }
 
-  .account:hover, .drop-down:hover {
+  .account:hover, .drop-down:hover, .home:hover {
     color: white;
   }
 
