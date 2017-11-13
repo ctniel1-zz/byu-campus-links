@@ -20,14 +20,14 @@
   }
 
   sidebar {
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     position: fixed;
     left: 18%;
     top: 82.5px;
     width: 15.5%;
     height: 80%;
     text-align: left;
-    background-color: white;
+    /*background-color: white;*/
   }
 
 }
