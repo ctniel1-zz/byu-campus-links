@@ -11,6 +11,13 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {SidebarComponent}   from './sidebar/sidebar.component';
 import {AccountComponent}   from './account/account.component';
 import {SettingsComponent}  from './settings/settings.component';
+import {ExploreComponent}   from './explore/explore.component';
+import {PopularComponent}   from './popular/popular.component';
+import {SetComponent}       from './set/set.component';
+import {FriendComponent}    from './friend/friend.component';
+import {CreateComponent}    from './create/create.component';
+
+import {CampusLinksService} from './campus-links.service';
 
 @NgModule({
   imports:      [BrowserModule,
@@ -24,8 +31,14 @@ import {SettingsComponent}  from './settings/settings.component';
                  DashboardComponent,
                  SidebarComponent,
                  AccountComponent,
-                 SettingsComponent
+                 SettingsComponent,
+                 ExploreComponent,
+                 PopularComponent,
+                 SetComponent,
+                 FriendComponent,
+                 CreateComponent
   ],
   bootstrap:    [AppComponent],
+    providers: [CampusLinksService]
 })
 export class AppModule { }

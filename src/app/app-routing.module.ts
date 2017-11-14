@@ -4,12 +4,22 @@ import {RouterModule, Routes} from '@angular/router';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {AccountComponent}   from './account/account.component';
 import {SettingsComponent}  from './settings/settings.component';
+import {ExploreComponent}   from './explore/explore.component';
+import {PopularComponent}   from './popular/popular.component';
+import {SetComponent}       from './set/set.component';
+import {FriendComponent}    from './friend/friend.component';
+import {CreateComponent}    from './create/create.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'account', component: AccountComponent},
-  {path: 'settings', component: SettingsComponent}
+  {path: 'account',   component: AccountComponent},
+  {path: 'settings',  component: SettingsComponent},
+  {path: 'explore',   component: ExploreComponent},
+  {path: 'popular',   component: PopularComponent},
+  {path: 'set',       component: SetComponent},
+  {path: 'friend',    component: FriendComponent},
+  {path: 'create',    component: CreateComponent}
 ];
 
 @NgModule({

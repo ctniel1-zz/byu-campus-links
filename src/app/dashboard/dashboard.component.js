@@ -23,25 +23,6 @@ var DashboardComponent = (function () {
             .load()
             .subscribe(function (data) { _this.links = data; });
     }
-    DashboardComponent.prototype.getSite = function () {
-        return this.site;
-    };
-    DashboardComponent.prototype.changePortlet = function (site) {
-        this.site = site;
-        console.log(this.site);
-    };
-    DashboardComponent.prototype.gotoAccount = function () {
-        this.router.navigate(['/account']);
-    };
-    DashboardComponent.prototype.gotoWork = function () {
-        this.router.navigate(['/work']);
-    };
-    DashboardComponent.prototype.gotoCommunication = function () {
-        this.router.navigate(['/communication']);
-    };
-    DashboardComponent.prototype.gotoFavorites = function () {
-        this.router.navigate(['/favorites']);
-    };
     DashboardComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

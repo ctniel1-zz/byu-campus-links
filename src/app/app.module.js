@@ -17,6 +17,12 @@ var dashboard_component_1 = require("./dashboard/dashboard.component");
 var sidebar_component_1 = require("./sidebar/sidebar.component");
 var account_component_1 = require("./account/account.component");
 var settings_component_1 = require("./settings/settings.component");
+var explore_component_1 = require("./explore/explore.component");
+var popular_component_1 = require("./popular/popular.component");
+var set_component_1 = require("./set/set.component");
+var friend_component_1 = require("./friend/friend.component");
+var create_component_1 = require("./create/create.component");
+var campus_links_service_1 = require("./campus-links.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,9 +39,15 @@ var AppModule = (function () {
                 dashboard_component_1.DashboardComponent,
                 sidebar_component_1.SidebarComponent,
                 account_component_1.AccountComponent,
-                settings_component_1.SettingsComponent
+                settings_component_1.SettingsComponent,
+                explore_component_1.ExploreComponent,
+                popular_component_1.PopularComponent,
+                set_component_1.SetComponent,
+                friend_component_1.FriendComponent,
+                create_component_1.CreateComponent
             ],
             bootstrap: [app_component_1.AppComponent],
+            providers: [campus_links_service_1.CampusLinksService]
         })
     ], AppModule);
     return AppModule;

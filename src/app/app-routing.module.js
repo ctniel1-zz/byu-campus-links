@@ -11,11 +11,21 @@ var router_1 = require("@angular/router");
 var dashboard_component_1 = require("./dashboard/dashboard.component");
 var account_component_1 = require("./account/account.component");
 var settings_component_1 = require("./settings/settings.component");
+var explore_component_1 = require("./explore/explore.component");
+var popular_component_1 = require("./popular/popular.component");
+var set_component_1 = require("./set/set.component");
+var friend_component_1 = require("./friend/friend.component");
+var create_component_1 = require("./create/create.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
     { path: 'account', component: account_component_1.AccountComponent },
-    { path: 'settings', component: settings_component_1.SettingsComponent }
+    { path: 'settings', component: settings_component_1.SettingsComponent },
+    { path: 'explore', component: explore_component_1.ExploreComponent },
+    { path: 'popular', component: popular_component_1.PopularComponent },
+    { path: 'set', component: set_component_1.SetComponent },
+    { path: 'friend', component: friend_component_1.FriendComponent },
+    { path: 'create', component: create_component_1.CreateComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

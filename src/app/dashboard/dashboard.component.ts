@@ -24,29 +24,4 @@ export class DashboardComponent{
     .load()
     .subscribe(data => {this.links = data});
 
-  getSite(){
-    return this.site;
-  }
-
-  changePortlet(site:string){
-    this.site = site;
-    console.log(this.site);
-  }
-
-  gotoAccount(): void{
-    this.router.navigate(['/account']);
-  }
-
-  gotoWork(): void{
-    this.router.navigate(['/work']);
-  }
-
-  gotoCommunication(): void{
-    this.router.navigate(['/communication']);
-  }
-
-  gotoFavorites(): void{
-    this.router.navigate(['/favorites']);
-  }
-
 }
